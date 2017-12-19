@@ -8,7 +8,8 @@
  */
 import gql from 'graphql-tag';
 
-{
+export default gql`
+  {
   Search(q: "Zelda", games: true) {
     pageInfo {
       total
@@ -28,3 +29,4 @@ import gql from 'graphql-tag';
     }
   }
 }
+`;
